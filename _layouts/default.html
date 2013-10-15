@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+		
+		<link rel="dns-prefetch" href="//www.google-analytics.com">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+		<link href="/style.css" rel="stylesheet">
+		
+		<!--[if lte IE 8]>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header box">
+				<div class="logo">
+					<a href="/">
+						<img src="/img/logo.svg" class="logo-img" alt="Logo">
+					</a>
+				</div>
+				<nav id="nav">
+					<ul class="nav">
+						<li><a href="/">Company & client blogs</a></li>
+						<li><a href="/downloads">Links & downloads</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<section class="main">
+				{{ content }}
+			</section>
+			
+			<aside class="sidebar">
+				<img src="/img/chris.jpg" alt="Chris Mackenzie">
+				<p class="item">
+					I'm an experienced and versatile writer and editor specialising in digital communications, print and social media. I'm also a seasoned account manager, and regularly plan and deliver content marketing campaigns.
+				</p>
+				<div class="item">
+					<a href="//twitter.com/cwgm" class="twitter-follow-button" data-show-count="true">Follow @cwgm</a>
+				</div>
+			</aside>
+			
+			<footer class="footer">
+				&copy; {{ 'now' | date: "%Y" }} Chris Mackenzie. 
+				Powered by <a href="//github.com/mojombo/jekyll">Jekyll</a>, 
+				site source code hosted on <a href="//github.com/cwgm/cwgm.github.com">GitHub</a>.
+			</footer>
+			
+		</div>
+		
+		<script src="/js/scripts.js"></script>
+		<script>
+			// Google Analytics
+			var _gaq=[['_setAccount','UA-XXXXXXXX-XX'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)})(document,'script');
+		</script>
+	
+	</body>
+</html>
